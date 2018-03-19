@@ -166,6 +166,9 @@ func (s *Service) Update(newConfigs []interface{}) error {
 
 	for _, v := range newConfigs {
 		if conf, ok := v.(Config); ok {
+			if conf.InsecureSkipVerify {
+				s.diag.InsecureSkipVerify()
+			}
 			_, ok := s.workspaces[conf.Workspace]
 			if !ok {
 				w, err := NewWorkspace(conf)
