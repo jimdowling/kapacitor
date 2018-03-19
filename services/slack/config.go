@@ -52,6 +52,7 @@ func (c *Config) ApplyDefaults() {
 	if c.Username == "" {
 		c.Username = DefaultUsername
 	}
+	c.Default = true
 }
 
 func (c Config) Validate() error {
