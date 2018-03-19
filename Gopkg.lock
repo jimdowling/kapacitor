@@ -571,10 +571,11 @@
   revision = "1d7be4effb13d2d908342d349d71a284a7542693"
 
 [[projects]]
-  branch = "master"
+  branch = "nc-fix-atomic-stats-alignment"
   name = "github.com/segmentio/kafka-go"
   packages = ["."]
-  revision = "3d7fdecf1f4a239d0b211f88f2a2723f4cd9ce4f"
+  revision = "10458f2598adab649f968760a4698d6be6d7dd42"
+  source = "github.com/influxdata/kafka-go"
 
 [[projects]]
   branch = "master"
@@ -892,6 +893,6 @@
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "471285daf6e6beceaa938816b65b7b835f7e8883968f6c7582f830173bb57a73"
+  inputs-digest = "e43897b6f771bf70bb425bf927af6a58c8c482ff1e34d317ef1422676b1e0f01"
   solver-name = "gps-cdcl"
   solver-version = 1
